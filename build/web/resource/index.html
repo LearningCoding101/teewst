@@ -1,0 +1,155 @@
+<html lang="en-US">
+
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8" />
+  <title>My test page</title>
+  <link rel="stylesheet" href="./resource/style.css">
+  <script>
+    function tooltip(element) {
+      var off = document.getElementById("navbar");
+      
+      var event = window.event;
+      var x = event.clientX;
+      var y = event.clientY;
+      var pos = element.getBoundingClientRect();
+      document.getElementById("toolText").textContent = element.getAttribute("data-name");
+      var tool = document.getElementById("tooltip");
+      tool.style.visibility = "visible";
+      tool.style.top = y - off.offsetHeight*1.1 +'px';
+      tool.style.left = x - 20  + 'px';
+    }
+    function toolexit(element) {
+      var tool = document.getElementById("tooltip");
+      tool.style.visibility = "hidden";
+    }
+  </script>
+</head>
+
+<body>
+  <div id="navbar">
+    <div id="logo"><img src="./resource/logo.jpg" width="100" height="100"></div>
+    <div id="first">b</div>
+    <div id="second">c</div>
+    <div id="third">d</div>
+    <div id="forth">e</div>
+  </div>
+  <div id="tooltip">
+    <p id="toolText">text</p>
+    <div id="lineA"></div>
+    <div id="lineB"></div>
+  </div>
+  <div id="main">
+    <div id="bikeText">
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod urna vel justo condimentum, ac varius urna commodo. Fusce ullamcorper justo ut orci fermentum, vel tincidunt metus tincidunt.</p>
+<p>Integer varius purus ac libero euismod, vitae aliquet libero efficitur. Ut ac nisl vitae velit imperdiet malesuada. Vestibulum quis velit nec tortor rhoncus consectetur. Nunc ultricies justo ut magna dictum, vel cursus massa commodo.</p>
+<p>Curabitur aliquet erat nec justo bibendum, a tincidunt urna volutpat. Nulla facilisi. Duis condimentum urna non quam sagittis, non efficitur felis aliquam. Vivamus ut lacus et leo convallis vestibulum ac nec ex.</p>
+    </div>
+    <div id="motContainer">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="100%" height="100%" id="viewer" viewBox="387.5,149,1078,700">
+      <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="none" stroke-linecap="none" stroke-linejoin="none" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
+        <g id="stage">
+          <g id="layer1" stroke="#000000" stroke-linecap="round" stroke-linejoin="round">
+            <a href="./yenXe" >
+              <path d="M712.50699,391.50266l12,-8l13,-2h29l15,3l12,5l28,2l18,4l17,11l13,10l14,7l19,-2l16,6l11,13l11,24l8,21l4,19l2,13l-10,6l-24,1l-37,-11l-13,-9l-23,-25l-31,-24l-25,-13l-37,-16l-16,-8l-27,-17z" id="yenXe" stroke-width="5" data-name="Yên Xe" onmouseover="tooltip(this)" onmouseout="toolexit(this)" />
+            </a>
+            <a href="./tayCamSau" >
+              <path d="M734.50699,420.00266l-26,-10l-23,-12l-9,-7l-12,-13l7,-5l23,1l31,7l-12,7l-4,9l9.04175,8.93369z" data-name="Tay cầm sau" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  id="tayCamSau" stroke-width="5" />
+            </a>
+            <a href="./voXe">
+              <path d="M734.50699,420.00266l41,19l36,17l23,17l29,27l14,17v11l-9,11l-9,12l2,13l12,29l7,9l-23,-8l-17,-16l-24,-25l-18,-20l-19,-12l11,21l14,23l14,28l16,20l39,17l-32,-6l-22,-17l-15,-27l-15,-24l-14,-21l-12,-12l-12,-28l-16,-20l-25,-23l-25,-24l-6,-8l20,-6l13,6z " data-name="Vỏ Xe" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  id="voXe1" stroke-width="5" />
+            </a>
+
+            <path d="M679.74699,420.32266l-7.24,-9.82l-4,-11l10,-4l10.79346,4.4792l15.07132,7.8633l27.13522,9.6575l8.45127,5.0262l-29.7342,-3.57986l-15.71707,-3.44634z" data-name="Đèn xe sau" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  id="denXeSau" stroke-width="5" />
+            <path d="M724.31765,464.70847l-23.81066,-4.20581h-17l-13,19v-12l13,-20l-11,-2l5,-9l13.87011,-2.8647z M670.50699,479.50266l-15.00699,43.99734l13,3l15,10l12,-20l10,-9l6,-43l-26,-3.99734z" data-name="Che nước sau" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  id="che1" stroke-width="5" />
+            <a href="./giamXoc">
+              <path d="M711.5,464.5l-9,84l7,6h9l3,-16l3,-27l5,-39l-6.80942,-8.07893z" data-name="Giảm xóc" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  id="giamXoc" stroke-width="5" />
+            </a>
+            <a href="./ongBo">
+              <path d="M768.5,615.5l-3,-10l-13,-19l-11,-21l-4,-9l-17,1l-12.07059,-3.91765l-24.92941,-17.08235l-15,-10l-13,-3l-13,4l-6,8l2,14l3,10l70,54l24,5h19z" data-name="Ống bô" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  id="ongBo" stroke-width="5" />
+            </a>
+
+            <a href="./deChan">
+              <path d="M794.5,578.5l-2,-12l-12,-17l-12,-6l6,18l8,18l7,6z" data-name="Để chân" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  id="deChan2" stroke-width="5" />
+            </a>
+
+            <a href="./nuoc">
+              <path d="M771.5,565.5l-14,12v9l23,33l35,7l-8,-13l-11,-9l-18.07692,-25.61538z" data-name="??" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  id="nuoc" stroke-width="5" />
+            </a>
+            <a href="./buaThangSau">
+              <path d="M757.5,547.5l-8,-5l-21,4l-9.06038,2.98868l0.44931,7.81299l17.61107,-0.80167l14.37367,28.80427l8.81051,5.76433l-3.18418,-13.5686l8.56471,-7.34118z" data-name="Bố thắng sau" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  id="buaThang1" stroke-width="5" />
+            </a>
+
+            <path d="M761.21722,531.64868l-6.43621,-2.75086l1.82011,18.04038l9.1751,22.45739l7.72378,-4.89559z" id="Path 1" stroke-width="5" />
+            <a href="./chanChong">
+              <path d="M793.50002,636.55673c0,0 -31.01539,5.24326 -42.64616,5.24326c-11.63077,0 -13.79787,2.95216 -13.79787,2.95216l-6.55597,-9.50623l8.72308,-5.24326l20.35385,1.31081c0,0 24.23077,-1.31081 26.16923,-1.31081c1.93846,0 7.75385,6.55407 7.75385,6.55407z" data-name="Chân chống" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  id="chanChong" stroke-width="5" />
+            </a>
+
+            <path d="M640.5,635.5" id="Path 1" stroke-width="1" />
+            <a href="./voXe">
+              <path d="M783.57692,620.11538l5.96054,14.13475l11.00348,4.90184l19.95906,2.34803l31,1l19,11l46,8l83,12l-31,-19l-13,-16l-68,-19l-43,-21l-24,-27l-25,-34l-13.62891,-15.00422l36.62891,71.00422l14.88101,18.09519l40.12598,18.40747l-34.12597,-7.6428l-20.88102,-12.85986l-12.32595,-20.14365l-7.87702,16.61395l9.20297,7.5297l8,13z" data-name="Vỏ xe" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  id="voXe2" stroke-width="5" />
+            </a>
+            <a href="./voXe">
+              <path d="M871.31111,509.47909l14.29947,4.64896l37.96753,10.24665l21.36609,-1.13436l2.5558,9.25967v16l2,21l5,11l11,7l2,13v25l-4,10l-78.81659,-17.37555l-39.39476,-19.2393l-59.33203,-71.89157l17.02106,10.97651l28.96177,31.10804l26.56056,22.42187l20.4146,8.45531l-14.67455,-29.34774l-4.2543,-20.24325l17.52124,-22.86431z"  id="Path 1" stroke-width="5" />
+            </a>
+            <a href="./voXe">
+              <path d="M999.5,673.5l9,-2l3,-9l-13,-21l-6,-48l5,-37l19,-46l27,-36l28,-30l-10,-14l-33,-22l-29,-18l-16,-8l-13,-6l-10,5l1,10l10,18l14,24l8,16l-3,13l-7,14l-11,20l-8,34v36l1,21.00001l2,29.99999l-1.03448,10.58621l-2.96552,7.4138l-3.96235,7.9694l8.56471,10.54118z" data-name="Vỏ xe" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  id="voXe3" stroke-width="5" />
+            </a>
+            <a href="./denFa">
+              <path d="M1039.66,479.62l17.84,-8.12l17,-4l20,-1l15,4l15,-4l4,8l8,-16l2,-16l-8,-3l-14,8h-17l-15,-4l-13.13514,0.81081z" data-name="Đèn Fa" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  id="denXe1" stroke-width="5" />
+            </a>
+            <a href="./voXe">
+              <path d="M970.5,376.5l24,1l19,-6l37,-5l10,1l8,7l13,1h12l13,10l16,17l8,16l8,20h-11l-8.63077,7.64615l-19.36923,1.35385l-15,-4l-12.01594,0.74172l-10.98406,-13.74172l-22.15385,-14.76923l-37.50624,-23.77841z" data-name="Vỏ xe" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  id="voXe4" stroke-width="5" />
+            </a>
+            <a href="./chanNuocTruoc">
+              <path d="M1020.5,549.5l11,-26l6,-7l8,14l-2,9l4,8l-16,4z M1049.5,504.5l12,33h10l17,-7h24l35,8l22,5l24,-2l9,-3l-24,-19l-23,-20l-19,-12l-21,-9l-23,3l-21,5l-13,4z"  data-name="Chắn nước trước" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  id="chanNuocTruoc" stroke-width="5" />
+            </a>
+
+            <a href="./phuocTruoc">
+              <path d="M1043.5,493.5l62,142l-15,5l-57,-140z" data-name="Phuộc trước" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  id="phuocTruoc" stroke-width="5" />
+            </a>
+            <a href="./banhXe">
+              <path d="M1080.73151,578.77216l23.76849,-13.77216l24,-1l17,1l26,25l11,27l1,35l-8,31l-27,13l-24,4l-27,-7l-25,-21l-7,-31l5,-31l0.77382,-16.7222l-11.69237,-28.71811l-11.08145,15.4403l-10,21l-5,31l6,36l18,31l35,32l33,6l31,-2l35,-18l20,-21l9,-33l-2,-47l-11,-34l-25,-30l-27.06876,-11.69745l-40.48748,-9.24398l-34.44375,11.94143l-12.11788,7.48809z" data-name="Bánh trước" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  id="banhTruoc" stroke-width="5" />
+            </a>
+            <path d="M1465.5,581" id="Path 1" stroke-width="1" />
+            <a href="./truc">
+              <path d="M1101.5,654l12,7l13,4l14,-10l8,-15l-11,-14l-11,-16l-36.25983,-9.44993l15.23659,34.8967l-18.97676,7.55323z" data-name="Trục" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  id="truc" stroke-width="5" />
+            </a>
+            <a href="./buaThangTruoc">
+              <path d="M1109.5,603l9,-9l13,-4h18l14,11l11,11l5,18l1,17l-5,15l-10,10l-13,3l-19,2l-8.82703,-12.56216l15.35405,-9.1l8.05775,-14.55929l-12.48133,-17.53717l-10.28389,-13.54902z" data-name="Bố thắng trước" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  id="buaThang2" stroke-width="5" />
+            </a>
+            <a href="./voXe">
+              <path d="M1128.3,474.1l-3.8,9.9l-13.12546,-4.9619l-53.84926,12.97814l-7.02527,9.98375l-7,-8.5l-9.47613,8.28671l5.60046,13.75553l-8.6074,9.09955l-10.51694,24.85822l11.35294,1.91176l15.64706,-3.41176l10,14l-17,30l-6.66024,37.89351l5.3089,35.99838l-30.64865,5.60811l1.43361,-11.53033l-11.43361,-18.46967l-5.81538,-46.52308l4.84607,-38.55121l16.96932,-46.42572l27.74638,-31.55721l32.14214,-10.91656l29.13637,1.38041z" data-name="Vỏ xe" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  id="voXe8" stroke-width="5" />
+            </a>
+            <path d="M1125.93966,482.97414" id="Path 1" stroke-width="1" />
+            <a href="./dauXe">
+              <path d="M995.84005,377.07683l-26.34005,-5.07683l-23,-3l-9,-9l20,-6l-7,-14l-21,-3l-8,-9l14,-5l22,-9l21,-1l18,-6h19l16,9l18,4l16,4l8,12l3,14l-9,12l-10,3l-18.00179,2.98673l-22.1363,2.99139z" id="dauXe" data-name="Đầu xe" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  stroke-width="5" />
+            </a>
+            <a href="./tayThang">
+              <path d="M946.5,343l-13,4l-13,3l-19,3l-6,7l9,4l9,-6l19,-2l22.6,-6.8z M1075.88536,347.13171l32.61463,6.86829l-4,5c0,0 -36.8953,-3.89742 -29.8953,-3.89742c7,0 1.28067,-7.97087 1.28067,-7.97087z" id="thang" stroke-width="5" data-name="Tay thắng" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  />
+            </a>
+            <a href="./tayCamTruoc">
+              <path d="M923.02036,327.45701l-3.52036,9.54299l-18,5l-34,5l-1,9h11l20,-3l33.88202,-5.51124l16.25036,-3.67239l-15.29238,-5.69637z" data-name="Tay cầm" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  id="tayCam" stroke-width="5" />
+            </a>
+
+            <a href="./denTruoc">
+              <path d="M978.04864,313.02149l-4.04864,18.97851v24l11,15l8.08745,5.54629l34.91255,-9.54629l10,-22l-3.69412,-28.37647l-20.30588,-6.62353l-21.55,-1.65z" id="denXe3" data-name="Đèn trước" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  stroke-width="5" />
+            </a>
+            <path d="M387.5,299" id="Path 1" stroke-width="1" />
+            <a href="./banhSau">
+              <path d="M680.31525,589.44319l4.18475,28.05681l12,25l21,24l27,14l27,2l22.5,-7.5l15.5,-15.5l11,-18l-25.24376,-2.96973l-22.89581,2.54332l-15.86043,3.42641l-9.04586,-1.90379l-10.19004,2.15595l-6.73053,-7.21617l8.96643,-4.03599l-8,-8l-9.05824,-9.72047l-11.08506,-2.39008z M751.68598,496.34728l-13.18598,-2.84728l-12.05951,3.76757l-3.9283,32.20043l11.9878,-3.79298h13l15,6.825l0.66874,-10.02944z M707.0889,505.67024l-11.09167,10.38225l-12.49724,20.44751l19,12z" stroke-width="5" class="banhSau" data-name="Bánh sau" onmouseover="tooltip(this)" onmouseout="toolexit(this)"  />
+            </a>
+
+          </g>
+    </svg>
+  </div>
+  </div>
+  
+  
+  <div id="tail">
+
+  </div>
+</body>
+
+</html>

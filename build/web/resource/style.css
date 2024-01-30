@@ -1,0 +1,100 @@
+#navbar{
+  width: 100vw;
+  height: 100px;
+  background: #ECDFAB;
+  display: flex;
+  top: 0;
+  color: white;
+}
+#tooltip{
+  position: absolute;
+  height: 10vw;
+  width: 5vw;
+  pointer-events: none;
+  visibility: hidden;
+  display: grid;
+  grid-template-areas:
+    "text text text text" "a b c d" "a b c d" "a b c d" "a b c d"
+  
+}
+#lineA{
+  grid-area: c;
+  border-left: 1px solid black;
+}
+#lineB{
+  grid-area: b;
+  border-right: 1px solid black;
+}
+#toolText{
+  margin: auto;
+  grid-area: text;
+}
+body{
+  background: white;
+  margin: 0 0 0 0;
+  
+}
+#layer1 path:hover{
+  fill: #F9B122;
+}
+#main{
+  display: grid;
+  justify-items: stretch;
+  align-items: stretch;
+  
+  grid-template-areas:"text bike bike" 
+    "text bike bike";
+  
+}
+#bikeText{
+  grid-area: text;
+  font-size: 2vw;
+  color: #09201B;
+  background: white;
+}
+#motContainer{
+ grid-area: bike;
+}
+#viewer{
+  display: block;
+  margin: auto;
+  height: 100vh;
+}
+#logo{
+  height: 10em;
+  aspect-ratio: 1;
+  background-repeat: no-repeat;
+  background-size: 5em 5em;
+  padding: ;
+
+}
+#logo{
+  height: 10em;
+  aspect-ratio: 1;
+}
+#first{
+  height: 10em;
+  aspect-ratio: 1;
+}
+
+#second{
+  height: 10em;
+  aspect-ratio: 1;
+}
+#third{
+  height: 10em;
+  aspect-ratio: 1;
+}
+#forth{
+  height: 10em;
+  aspect-ratio: 1;
+}
+#tail{
+  height:20vh;
+  width:100vw;
+  display:grid;
+  background: #09201B;
+  
+}
+
+
